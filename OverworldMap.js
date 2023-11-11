@@ -168,13 +168,6 @@ class OverworldMap {
           y: utils.withGrid(13),
           src: "npc3.png",
         }),
-        erio: new Person({
-          x: utils.withGrid(1),
-          y: utils.withGrid(9),
-          // x: utils.withGrid(11),
-          // y: utils.withGrid(9),
-          src: "erio.png",
-        }),
       },
       walls: {
           // table walls 
