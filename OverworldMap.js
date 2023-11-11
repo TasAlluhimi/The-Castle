@@ -169,8 +169,8 @@ class OverworldMap {
           src: "npc3.png",
         }),
         erio: new Person({
-          x: utils.withGrid(0),
-          y: utils.withGrid(10),
+          x: utils.withGrid(1),
+          y: utils.withGrid(9),
           // x: utils.withGrid(11),
           // y: utils.withGrid(9),
           src: "erio.png",
@@ -191,7 +191,40 @@ class OverworldMap {
           [utils.asGridCoord(5,14)] : true,
   
           // normal walls 
-          [utils.asGridCoord(5,14)] : true,
+          [utils.asGridCoord(0,13)] : true,
+          [utils.asGridCoord(0,14)] : true,
+          [utils.asGridCoord(0,15)] : true,
+          [utils.asGridCoord(0,16)] : true,
+          [utils.asGridCoord(0,17)] : true,
+          [utils.asGridCoord(0,18)] : true,
+          [utils.asGridCoord(0,19)] : true,
+          [utils.asGridCoord(0,20)] : true,
+
+          [utils.asGridCoord(1,20)] : true,
+          [utils.asGridCoord(2,20)] : true,
+          [utils.asGridCoord(3,20)] : true,
+          [utils.asGridCoord(4,20)] : true,
+          [utils.asGridCoord(5,20)] : true,
+        //   [utils.asGridCoord(6,20)] : true,
+          [utils.asGridCoord(7,20)] : true,
+          [utils.asGridCoord(8,20)] : true,
+          [utils.asGridCoord(9,20)] : true,
+          [utils.asGridCoord(10,20)] : true,
+          [utils.asGridCoord(11,20)] : true,
+          [utils.asGridCoord(12,20)] : true,
+          [utils.asGridCoord(13,20)] : true,
+
+          [utils.asGridCoord(11,8)] : true,
+          [utils.asGridCoord(10,8)] : true,
+          [utils.asGridCoord(9,8)] : true,
+          [utils.asGridCoord(8,8)] : true,
+          [utils.asGridCoord(7,9)] : true,
+          [utils.asGridCoord(6,9)] : true,
+          [utils.asGridCoord(5,8)] : true,
+          [utils.asGridCoord(4,8)] : true,
+          [utils.asGridCoord(3,8)] : true,
+          [utils.asGridCoord(2,8)] : true,
+          [utils.asGridCoord(1,8)] : true,
         },
         cutsceneSpaces: {
           // kitchen 
@@ -238,7 +271,21 @@ class OverworldMap {
               ]
             }
           ],
-          [utils.asGridCoord(9,18)]: [
+          [utils.asGridCoord(9,19)]: [
+            {
+              events: [
+                { type: "changeMap", map: "jail" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(10,13)]: [
+            {
+              events: [
+                { type: "changeMap", map: "jail" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(11,13)]: [
             {
               events: [
                 { type: "changeMap", map: "jail" }
@@ -250,6 +297,35 @@ class OverworldMap {
             {
               events: [
                 { type: "changeMap", map: "bed_room" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(0,10)]: [
+            {
+              events: [
+                { type: "changeMap", map: "bed_room" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(0,11)]: [
+            {
+              events: [
+                { type: "changeMap", map: "bed_room" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(0,12)]: [
+            {
+              events: [
+                { type: "changeMap", map: "bed_room" }
+              ]
+            }
+          ],
+        //   back outside 
+        [utils.asGridCoord(6,20)]: [
+            {
+              events: [
+                { type: "changeMap", map: "DemoRoom" }
               ]
             }
           ]
@@ -319,11 +395,6 @@ class OverworldMap {
           y: utils.withGrid(7),
           src: "npc1.png",
         }),
-        erio: new Person({
-          x: utils.withGrid(10),
-          y: utils.withGrid(4),
-          src: "erio.png",
-        }),
       },
       walls: {
           [utils.asGridCoord(11,9)] : true,
@@ -346,6 +417,21 @@ class OverworldMap {
           [utils.asGridCoord(1,4)] : true,
   
           [utils.asGridCoord(1,4)] : true,
+          [utils.asGridCoord(2,4)] : true,
+          [utils.asGridCoord(3,4)] : true,
+          [utils.asGridCoord(4,4)] : true,
+          [utils.asGridCoord(5,4)] : true,
+          [utils.asGridCoord(6,4)] : true,
+          [utils.asGridCoord(7,4)] : true,
+          [utils.asGridCoord(8,4)] : true,
+          [utils.asGridCoord(11,4)] : true,
+
+          [utils.asGridCoord(12,4)] : true,
+          [utils.asGridCoord(12,5)] : true,
+          [utils.asGridCoord(12,6)] : true,
+          [utils.asGridCoord(12,8)] : true,
+          [utils.asGridCoord(12,9)] : true,
+          [utils.asGridCoord(12,10)] : true,
   
       //     [utils.asGridCoord(17,17)] : true,
       //     [utils.asGridCoord(15,17)] : true,
@@ -364,7 +450,14 @@ class OverworldMap {
                 { type: "changeMap", map: "winner_land" }
               ]
             }
-          ]
+          ],
+          [utils.asGridCoord(12,7)]: [
+            {
+              events: [
+                { type: "changeMap", map: "living_room" }
+              ]
+            }
+          ],
         },
     },
     winner_land: {
