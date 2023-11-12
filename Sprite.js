@@ -10,7 +10,7 @@ class Sprite {
   
       //Shadow
       this.shadow = new Image();
-      this.useShadow = true; //config.useShadow || false
+      this.useShadow = true; 
       if (this.useShadow) {
         this.shadow.src = "/images/characters/shadow.png";
       }
@@ -29,7 +29,7 @@ class Sprite {
         "walk-up"   : [ [1,2],[0,2],[3,2],[0,2], ],
         "walk-left" : [ [1,3],[0,3],[3,3],[0,3], ]
       }
-      this.currentAnimation = "idle-right"; // config.currentAnimation || "idle-down";
+      this.currentAnimation = "idle-right";
       this.currentAnimationFrame = 0;
   
       this.animationFrameLimit = config.animationFrameLimit || 8;
@@ -67,10 +67,8 @@ class Sprite {
         this.currentAnimationFrame = 0
       }
   
-  
     }
     
-  
     draw(ctx, cameraPerson) {
       const x = this.gameObject.x - 8 + utils.withGrid(10.5) - cameraPerson.x;
       const y = this.gameObject.y - 18 + utils.withGrid(6) - cameraPerson.y;
