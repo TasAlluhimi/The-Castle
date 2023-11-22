@@ -8,13 +8,20 @@
   </head>
   <body style="background-color: black;">
 
-    <!-- <audio id="backgroundMusic" loop autoplay="autoplay">
+    <audio id="backgroundMusic" controls loop autoplay="autoplay">
       <source src="mus.mp4" type="audio/mp3">
-    </audio> -->
+    </audio>
 
     <div class="game-container">
       <canvas class="game-canvas" width="352" height="198"></canvas>
     </div>
+<!-- 
+    <div style="text-align:center;width:480px;">
+      <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+      <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+      <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+      <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+    </div> -->
 
     <!-- Scripts -->
     <script src="utils.js"></script>
@@ -31,16 +38,18 @@
     <script src="SceneTransition.js"></script>
     <script src="init.js"></script>
 
-    <!-- <script>
-        // Function to play audio
-  function playAudio() {
-    let music = new Audio("mus.mp4");
-    music.loop = true; // Set to true if you want the audio to loop
-    music.play();
-  }
+    <script>
+  //       // Function to play audio
+  // function playAudio() {
+  //   let music = new Audio("mus.mp4");
+  //   music.loop = true; // Set to true if you want the audio to loop
+  //   music.play();
+  // }
 
-  // Call the function to play audio when the page loads
-  window.addEventListener("load", playAudio);
-    </script> -->
+  // // Call the function to play audio when the page loads
+  // window.addEventListener("load", playAudio);
+
+  
+    </script>
   </body>
 </html>

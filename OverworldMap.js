@@ -163,10 +163,19 @@ class OverworldMap {
           y: utils.withGrid(19),
           src: "npc1.png",
         }),
-        npcB: new Person({
+        Father: new Person({
           x: utils.withGrid(9),
           y: utils.withGrid(13),
           src: "npc3.png",
+        }),
+        son: new Person({
+          x: utils.withGrid(10),
+          y: utils.withGrid(14),
+          src: "npc2.png",
+        }),chill: new Person({
+          x: utils.withGrid(7),
+          y: utils.withGrid(15),
+          src: "chill.png",
         }),
       },
       walls: {
@@ -334,15 +343,27 @@ class OverworldMap {
           y: utils.withGrid(6),
           src: "npc1.png",
         }),
-        erio: new Person({
+        dutgher: new Person({
           x: utils.withGrid(2),
           y: utils.withGrid(7),
           src: "erio.png",
         }),
-        npc4: new Person({
+        mother: new Person({
           x: utils.withGrid(5),
           y: utils.withGrid(6),
           src: "npc4.png",
+        }),veggie: new Person({
+          x: utils.withGrid(4),
+          y: utils.withGrid(7),
+          src: "veggie.png",
+        }),spicy: new Person({
+          x: utils.withGrid(6),
+          y: utils.withGrid(3.8),
+          src: "spicy.png",
+        }),fungi: new Person({
+          x: utils.withGrid(5),
+          y: utils.withGrid(3.8),
+          src: "fungi.png",
         }),
       },
       walls: {
@@ -387,6 +408,11 @@ class OverworldMap {
           x: utils.withGrid(11),
           y: utils.withGrid(7),
           src: "npc1.png",
+        }),
+        coins: new Person({
+          x: utils.withGrid(11),
+          y: utils.withGrid(4),
+          src: "coin-box.png",
         }),
       },
       walls: {
@@ -438,6 +464,13 @@ class OverworldMap {
             }
           ],
           [utils.asGridCoord(9,4)]: [
+            {
+              events: [
+                { type: "changeMap", map: "winner_land" }
+              ]
+            }
+          ],
+          [utils.asGridCoord(11,4)]: [
             {
               events: [
                 { type: "changeMap", map: "winner_land" }

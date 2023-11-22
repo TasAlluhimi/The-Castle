@@ -22,10 +22,8 @@ class OverworldEvent {
         resolve();
   
         sceneTransition.fadeOut();
-  
       })
     }
-  
     // to starts events 
     init() {
       return new Promise(resolve => {

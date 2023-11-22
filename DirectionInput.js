@@ -35,5 +35,5 @@ class DirectionInput {
       })
   
     }
-  
+    
   }
